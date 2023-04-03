@@ -10,9 +10,9 @@ The dataset used in the paper is also accompanied:
 
 [**Complete Blood Count (CBC)**](https://github.com/MahmudulAlam/Complete-Blood-Cell-Count-Dataset)
 
-##Quick Start Examples
+## Quick Start Examples
 
-###Install
+### Install
 
 Clone repo and install [requirements.txt](.requirements.txt) in a Python>=3.7.0 environment, including PyTorch>=1.7.
 
@@ -22,7 +22,7 @@ cd yolov5
 pip install -r requirements.txt  # install
 ```
 
-###Training
+### Training
 
 Use the `--batch-size 32` on a GPU of NVIDIA RTX 3090 and the memory is 32GB.
 
@@ -30,7 +30,7 @@ Use the `--batch-size 32` on a GPU of NVIDIA RTX 3090 and the memory is 32GB.
 python train.py --data 'data/coco.yaml' --cfg 'models/yolov5-pac.yaml' --weights '' --batch-size 32
 ``` 
 
-###Inference
+### Inference
 
 Inference refers [YOLOv5](https://github.com/ultralytics/yolov5). 
 
