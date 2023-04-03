@@ -14,7 +14,7 @@ The dataset used in the paper is also accompanied:
 
 ### Install
 
-Clone repo and install [requirements.txt](.requirements.txt) in a Python>=3.7.0 environment, including PyTorch>=1.7.
+Clone repo and install [requirements.txt](requirements.txt) in a Python>=3.7.0 environment, including PyTorch>=1.7.
 
 ```python
 git clone https://github.com/ultralytics/yolov5  # clone
@@ -34,7 +34,7 @@ python train.py --data 'data/coco.yaml' --cfg 'models/yolov5-pac.yaml' --weights
 
 Inference refers [YOLOv5](https://github.com/ultralytics/yolov5). 
 
-weights of [PAC-YOLOv5s](.pac-yolov5s.pt) download automatically from this repo trained from Plasmodium.
+weights of [PAC-YOLOv5s](pac-yolov5s.pt) download automatically from this repo trained from Plasmodium.
 
 ```python
 python val.py --data 'data/coco.yaml' --cfg 'models/yolov5-pac.yaml' --weights 'pac-yolov5s.pt' --batch-size 32
