@@ -48,7 +48,7 @@ class Conv(nn.Module):
 
     def forward_fuse(self, x):
         return self.act(self.conv(x))
-class CEConv(Conv):
+class EConv(Conv):
     # Standard convolution
     def __init__(self, c1, c2, k=1, s=1,img_size=256,patch_size=16,p=None, dims=None,g=1, act=True):  # ch_in, ch_out, kernel, stride, padding, groups
         super().__init__(c1, c2, k=1, s=1, p=None, g=1, act=True)
@@ -984,7 +984,9 @@ class PA(nn.Module):
             y=self.unpatchify(y)
             return y
         else:
-            return self.PA(y)
+            y=y*x
+            y=self.unpatchify(y)
+            return y
 
 class PABottlenecks(nn.Module):
     # ch_in, ch_out, shortcut, groups, expansion, ratio, kernel_size
@@ -1167,7 +1169,7 @@ class PAC(nn.Module):
     def __init__(self, c1, c2, img_size,patch_size=16,k=1,s=1,dim=128):
         super().__init__()
         c_=int(c2//2)
-        self.cv = CEConv(c2, c2, k, s,img_size//s,patch_size,None,dim)
+        self.cv = EConv(c2, c2, k, s,img_size//s,patch_size,None,dim)
         self.cv1=Conv(c1,c_,1,1)
         self.cv2=Conv(c1,c_,1,1)
         self.m = PABottleneck(c_, c_, img_size,patch_size)
