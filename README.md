@@ -7,7 +7,7 @@ This is the source code to reproduce *PAC-YOLOv5* proposed in the paper:
 ### Deying Liu, Ming Gao, Jixiang Yu, Wei Xu, Shancheng Jiang, Kai Leung Yung and Wai Huang Ip
 
 
-The dataset used in the paper is also accompanied:
+The datasets used in the paper are also accompanied:
 
 [**Plasmodium**](https://aistudio.baidu.com/aistudio/datasetdetail/152739/0)
 
@@ -22,9 +22,9 @@ The dataset used in the paper is also accompanied:
 Clone repo and install [requirements.txt](requirements.txt) in a Python>=3.7.0 environment, including PyTorch>=1.7.
 
 ```python
-git clone https://github.com/ultralytics/yolov5  # clone
+git clone https://github.com/ultralytics/yolov5 
 cd yolov5
-pip install -r requirements.txt  # install
+pip install -r requirements.txt
 ```
 
 ### Training
