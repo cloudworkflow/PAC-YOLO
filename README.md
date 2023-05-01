@@ -1,6 +1,10 @@
 # PAC-YOLOv5
 
-This is the source code to reproduce *PAC-YOLOv5* proposed in the paper: Cell Detection with Patch-wise Local Spatial Attention and Convolutional Enhancements.
+This is the source code to reproduce *PAC-YOLOv5* proposed in the paper: 
+
+# Cell Detection with Patch-wise Local Spatial Attention and Convolutional Enhancements.
+
+### Deying Liu, Ming Gao, Jixiang Yu, Wei Xu, Shancheng Jiang, Kai Leung Yung and Wai Huang Ip
 
 The dataset used in the paper is also accompanied:
 
