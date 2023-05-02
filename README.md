@@ -22,8 +22,8 @@ The datasets used in the paper are also accompanied:
 Clone repo and install [requirements.txt](requirements.txt) in a Python>=3.7.0 environment, including PyTorch>=1.7.
 
 ```python
-git clone https://github.com/ultralytics/yolov5 
-cd yolov5
+git clone https://github.com/cloudworkflow/PAC-YOLO
+cd PAC-YOLO
 pip install -r requirements.txt
 ```
 
