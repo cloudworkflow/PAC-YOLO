@@ -45,3 +45,9 @@ weights of [PAC-YOLOv5s](pac-yolov5s.pt) download automatically from this repo t
 ```python
 python val.py --data 'data/coco.yaml' --cfg 'models/yolov5-pac.yaml' --weights 'pac-yolov5s.pt' --batch-size 32
 ```
+
+### Acknowledgement
+
+This implementation is built upon YOLOv5 (https://github.com/ultralytics/yolov5)
+
+
